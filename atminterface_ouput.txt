@@ -1,0 +1,194 @@
+// SAMPLE OUTPUT
+
+D:\java>javac atminterface.java
+
+D:\java>java -cp .;mysql-connector-j-8.0.33.jar atminterface
+WELCOME
+1.login
+2.Register
+Enter your option:
+1
+choice:1
+
+enter the username:
+sam
+enter the password:
+sam@3456
+User doesnot exists!kindly do register
+1.login
+2.Register
+Enter your option:
+2
+enter the username:
+sam
+enter your account no:
+76852232
+account no should contain 9 digits only
+7685232
+enter your password:
+sam@3456
+confirm the password(re-enter):
+sam@3456
+Enter Your 4 Digit PIN:
+5678
+User registered successfully
+
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+2
+
+WITHDRAW
+enter your pin no:
+5678
+how much do you want to withdraw:
+100
+You don't have enough amount in your account to withdraw
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+2
+
+WITHDRAW
+enter your pin no:
+5678
+how much do you want to withdraw:
+100
+You don't have enough amount in your account to withdraw
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+3
+
+DEPOSIT
+enter your pin no:
+5678
+how much do you want to deposit:
+5000
+
+Deposit successfull!!
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+4
+
+BALANCE AMOUNT
+enter your pin no:
+5678
+
+Your account Balance is:5000
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+2
+
+WITHDRAW
+enter your pin no:
+5678
+how much do you want to withdraw:
+1000
+
+withdraw successfull!!
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+4
+
+BALANCE AMOUNT
+enter your pin no:
+5678
+
+Your account Balance is:4000
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+5
+
+TRANSFER AMOUNT
+enter your pin no:
+5678
+Enter recepients name:
+jalal
+Enter recipients account number:
+80567142
+Enter valid account number
+8046714
+how much do you want to transfer:
+1000
+
+Amount transferred to jalal
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+1
+
+TRANSACTION HISTORY
+enter your pin no:
+5678
+kindly re-enter your pin no:
+5678
+1000 Rs transferred to jalal
+
+do you want to continue(enter 1 to continue 0 to exit):
+1
+1.Past transaction histroy
+2.Withdraw
+3.Deposit
+4.Check Balance
+5.Tranfer Amount
+6.Quit
+Choose your choice:
+6

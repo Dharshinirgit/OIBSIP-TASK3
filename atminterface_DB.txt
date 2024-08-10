@@ -1,0 +1,58 @@
+//DATABASE AND TABLES USED IN ATM INTERFACE
+
+C:\Users\ELCOT>cd C:\xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 28
+Server version: 10.4.28-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use atm;
+Database changed
+MariaDB [atm]> select *from userdetails;
++-----------+-----------+----------+----------+------+
+| name      | id        | password | confirm  | pin  |
++-----------+-----------+----------+----------+------+
+| raja      | 123456789 | raj#1503 | raj#1503 | 1234 |
+| kokila    | 909225543 | koki@123 | koki@123 | 2345 |
+| dharshini | 991234567 | dhar@123 | dhar@123 | 6789 |
+| kannan    | 876543219 | kana#909 | kana#909 | 3456 |
+| monisha   |   8762321 | moni@345 | moni@345 | 7865 |
+| sam       |   7685232 | sam@3456 | sam@3456 | 5678 |
++-----------+-----------+----------+----------+------+
+6 rows in set (0.001 sec)
+
+MariaDB [atm]> select *from cusmoney;
++------+---------+
+| pin  | balance |
++------+---------+
+| 1234 |    2290 |
+| 2345 |    1600 |
+| 6789 |    1800 |
+| 3456 |    1900 |
+| 7865 |    2000 |
+| 5678 |    3000 |
++------+---------+
+6 rows in set (0.001 sec)
+
+MariaDB [atm]> select *from transaction;
++------+-------+--------+
+| pin  | name  | amount |
++------+-------+--------+
+| 1234 | gayu  |    100 |
+| 1234 | kala  |     10 |
+| 2345 | madhu |    100 |
+| 2345 | hari  |    100 |
+| 6789 | kalai |    100 |
+| 3456 | divya |    100 |
+| 3456 | divya |    100 |
+| 7865 | kalai |   1000 |
+| 5678 | jalal |   1000 |
++------+-------+--------+
+9 rows in set (0.001 sec)
+
